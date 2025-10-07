@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Burger — King Jr Clone</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="topbar">
+      <div class="logo">
+        <div class="circle">BK</div>
+        <div>
+          <div style="font-weight:800;">TG</div>
+          <div style="font-size:12px; color:var(--muted)">Sabor que manda</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#" data-link="home"><span class="icon">🏠</span>Inicio</a>
+        <a href="#" data-link="menu"><span class="icon">📋</span>Menú</a>
+        <a href="#" data-link="loc"><span class="icon">📍</span>Contacto</a>
+        <a href="#" data-link="order"><span class="icon">🛒</span>Ordenar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-hidden="false">
+      <div class="left">
+        <h1>Terrazas del Gordo<br><small style="font-size:18px; display:block;">Nueva Colección</small></h1>
+        <p>¡Colecciona figuras oficiales! Solo por tiempo limitado.</p>
+        <div class="dots" aria-hidden>
+          <div class="dot active"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="fig">
+        <div class="toy">👑</div>
+        <div class="toy">🍔</div>
+        <div class="toy">🐶</div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <div class="container">
+      <!-- Vista principal -->
+      <div id="homeView">
+        <div class="section-head">
+          <h2>Menu :)</h2>
+          <a href="#" style="color:var(--muted); font-size:13px; text-decoration:none">Ver todo</a>
+        </div>
+
+        <div class="grid" id="categories">
+          <!-- Cards creadas por JS -->
+        </div>
+      </div>
+
+      <!-- Vista productos -->
+      <div id="productsView" class="products" aria-hidden>
+        <div class="backbtn" id="backBtn">← Volver</div>
+        <div class="section-head">
+          <h2 id="catTitle">Whopper</h2>
+          <div style="color:var(--muted); font-size:13px" id="catSubtitle">Subtítulo de la categoría</div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Productos creados por JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    Preguntas frecuentes — Alianzas — Políticas de privacidad — Legales
+  </footer>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
